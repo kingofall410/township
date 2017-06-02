@@ -1,0 +1,10 @@
+{% load static %}
+<script src="{% static 'frontpage/jquery-2.2.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'smart-selects/admin/js/chainedfk.js' %}"></script>
+<script type="text/javascript" src="{% static 'smart-selects/admin/js/chainedm2m.js' %}"></script>
+<script type="text/javascript" src="{% static 'smart-selects/admin/js/bindfields.js' %}"></script>
+<form action="" method="post">
+	{% csrf_token %} 
+	{{ form }}
+	<input type="submit" value="Submit" />
+</form>
